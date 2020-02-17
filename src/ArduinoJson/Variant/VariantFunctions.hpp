@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Variant/VariantData.hpp>
+#include "../Variant/VariantData.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

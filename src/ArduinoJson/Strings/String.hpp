@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Strings/ConstRamStringAdapter.hpp>
+#include "../Strings/ConstRamStringAdapter.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

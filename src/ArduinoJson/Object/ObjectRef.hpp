@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <ArduinoJson/Object/ObjectFunctions.hpp>
-#include <ArduinoJson/Object/ObjectIterator.hpp>
+#include "../Object/ObjectFunctions.hpp"
+#include "../Object/ObjectIterator.hpp"
 
 // Returns the size (in bytes) of an object with n elements.
 // Can be very handy to determine the size of a StaticMemoryPool.

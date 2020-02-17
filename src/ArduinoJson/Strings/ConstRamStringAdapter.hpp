@@ -7,7 +7,7 @@
 #include <stddef.h>  // size_t
 #include <string.h>  // strcmp
 
-#include <ArduinoJson/Polyfills/safe_strcmp.hpp>
+#include "../Polyfills/safe_strcmp.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <ArduinoJson/Array/ArrayShortcuts.hpp>
-#include <ArduinoJson/Object/ObjectShortcuts.hpp>
+#include "../Array/ArrayShortcuts.hpp"
+#include "../Object/ObjectShortcuts.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

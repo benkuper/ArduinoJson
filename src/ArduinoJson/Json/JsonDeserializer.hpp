@@ -4,16 +4,16 @@
 
 #pragma once
 
-#include <ArduinoJson/Deserialization/deserialize.hpp>
-#include <ArduinoJson/Json/EscapeSequence.hpp>
-#include <ArduinoJson/Json/Latch.hpp>
-#include <ArduinoJson/Json/Utf16.hpp>
-#include <ArduinoJson/Json/Utf8.hpp>
-#include <ArduinoJson/Memory/MemoryPool.hpp>
-#include <ArduinoJson/Numbers/parseNumber.hpp>
-#include <ArduinoJson/Polyfills/assert.hpp>
-#include <ArduinoJson/Polyfills/type_traits.hpp>
-#include <ArduinoJson/Variant/VariantData.hpp>
+#include "../Deserialization/deserialize.hpp"
+#include "EscapeSequence.hpp"
+#include "Latch.hpp"
+#include "Utf16.hpp"
+#include "Utf8.hpp"
+#include "../Memory/MemoryPool.hpp"
+#include "../Numbers/parseNumber.hpp"
+#include "../Polyfills/assert.hpp"
+#include "../Polyfills/type_traits.hpp"
+#include "../Variant/VariantData.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

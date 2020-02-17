@@ -4,11 +4,11 @@
 
 #pragma once
 
-#include <ArduinoJson/Deserialization/DeserializationError.hpp>
-#include <ArduinoJson/Deserialization/Filter.hpp>
-#include <ArduinoJson/Deserialization/NestingLimit.hpp>
-#include <ArduinoJson/Deserialization/Reader.hpp>
-#include <ArduinoJson/StringStorage/StringStorage.hpp>
+#include "DeserializationError.hpp"
+#include "Filter.hpp"
+#include "NestingLimit.hpp"
+#include "Reader.hpp"
+#include "../StringStorage/StringStorage.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

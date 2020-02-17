@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Namespace.hpp>
+#include "../../Namespace.hpp"
 
 #include <stddef.h>  // for size_t
 

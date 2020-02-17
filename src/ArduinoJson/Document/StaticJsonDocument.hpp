@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Document/JsonDocument.hpp>
+#include "JsonDocument.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

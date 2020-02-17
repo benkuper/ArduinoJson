@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <ArduinoJson/Polyfills/assert.hpp>
-#include <ArduinoJson/Variant/VariantData.hpp>
+#include "../Polyfills/assert.hpp"
+#include "../Variant/VariantData.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

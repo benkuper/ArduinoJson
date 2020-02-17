@@ -6,7 +6,7 @@
 
 #include <WString.h>
 
-#include <ArduinoJson/Polyfills/safe_strcmp.hpp>
+#include "../Polyfills/safe_strcmp.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

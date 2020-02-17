@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Serialization/Writers/DummyWriter.hpp>
+#include "../Serialization/Writers/DummyWriter.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

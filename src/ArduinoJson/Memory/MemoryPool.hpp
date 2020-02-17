@@ -4,11 +4,11 @@
 
 #pragma once
 
-#include <ArduinoJson/Memory/Alignment.hpp>
-#include <ArduinoJson/Memory/StringSlot.hpp>
-#include <ArduinoJson/Polyfills/assert.hpp>
-#include <ArduinoJson/Polyfills/mpl/max.hpp>
-#include <ArduinoJson/Variant/VariantSlot.hpp>
+#include "../Memory/Alignment.hpp"
+#include "../Memory/StringSlot.hpp"
+#include "../Polyfills/assert.hpp"
+#include "../Polyfills/mpl/max.hpp"
+#include "../Variant/VariantSlot.hpp"
 
 #include <string.h>  // memmove
 

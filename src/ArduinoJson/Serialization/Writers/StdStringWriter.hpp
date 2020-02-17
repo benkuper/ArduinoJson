@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <ArduinoJson/Namespace.hpp>
-#include <ArduinoJson/Polyfills/type_traits.hpp>
+#include "../../Namespace.hpp"
+#include "../../Polyfills/type_traits.hpp"
 
 #include <string>
 

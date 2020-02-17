@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Namespace.hpp>
+#include "../Namespace.hpp"
 
 #if ARDUINOJSON_ENABLE_STD_STREAM
 #include <ostream>

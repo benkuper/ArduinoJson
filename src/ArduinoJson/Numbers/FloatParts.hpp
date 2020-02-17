@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <ArduinoJson/Configuration.hpp>
-#include <ArduinoJson/Numbers/FloatTraits.hpp>
-#include <ArduinoJson/Polyfills/math.hpp>
+#include "../Configuration.hpp"
+#include "../Numbers/FloatTraits.hpp"
+#include "../Polyfills/math.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

@@ -7,13 +7,13 @@
 #include <stddef.h>
 #include <stdint.h>  // for uint8_t
 
-#include <ArduinoJson/Memory/MemoryPool.hpp>
-#include <ArduinoJson/Misc/Visitable.hpp>
-#include <ArduinoJson/Operators/VariantOperators.hpp>
-#include <ArduinoJson/Polyfills/type_traits.hpp>
-#include <ArduinoJson/Variant/VariantAs.hpp>
-#include <ArduinoJson/Variant/VariantFunctions.hpp>
-#include <ArduinoJson/Variant/VariantRef.hpp>
+#include "../Memory/MemoryPool.hpp"
+#include "../Misc/Visitable.hpp"
+#include "../Operators/VariantOperators.hpp"
+#include "../Polyfills/type_traits.hpp"
+#include "../Variant/VariantAs.hpp"
+#include "../Variant/VariantFunctions.hpp"
+#include "../Variant/VariantRef.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <ArduinoJson/Polyfills/gsl/not_null.hpp>
-#include <ArduinoJson/Polyfills/type_traits.hpp>
-#include <ArduinoJson/Variant/VariantContent.hpp>
+#include "../Polyfills/gsl/not_null.hpp"
+#include "../Polyfills/type_traits.hpp"
+#include "../Variant/VariantContent.hpp"
 
 #include <stdint.h>  // int8_t, int16_t
 

@@ -7,7 +7,7 @@
 #include <stdint.h>
 #include <stdlib.h>  // for size_t
 
-#include <ArduinoJson/Configuration.hpp>
+#include "../Configuration.hpp"
 #include "math.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {

@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <ArduinoJson/Memory/MemoryPool.hpp>
-#include <ArduinoJson/Memory/StringBuilder.hpp>
+#include "../Memory/MemoryPool.hpp"
+#include "../Memory/StringBuilder.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <ArduinoJson/Strings/IsWriteableString.hpp>
-#include <ArduinoJson/Variant/VariantFunctions.hpp>
-#include <ArduinoJson/Variant/VariantRef.hpp>
+#include "../Strings/IsWriteableString.hpp"
+#include "../Variant/VariantFunctions.hpp"
+#include "../Variant/VariantRef.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

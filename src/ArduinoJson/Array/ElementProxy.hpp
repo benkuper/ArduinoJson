@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <ArduinoJson/Configuration.hpp>
-#include <ArduinoJson/Operators/VariantOperators.hpp>
-#include <ArduinoJson/Variant/VariantTo.hpp>
+#include "../Configuration.hpp"
+#include "../Operators/VariantOperators.hpp"
+#include "../Variant/VariantTo.hpp"
 
 #ifdef _MSC_VER
 #pragma warning(push)

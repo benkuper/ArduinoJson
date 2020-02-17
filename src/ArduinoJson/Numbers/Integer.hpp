@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <ArduinoJson/Configuration.hpp>
-#include <ArduinoJson/Namespace.hpp>
+#include "../Configuration.hpp"
+#include "../Namespace.hpp"
 
 #include <stdint.h>  // int64_t
 

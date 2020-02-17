@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <ArduinoJson/Array/ArrayFunctions.hpp>
-#include <ArduinoJson/Array/ArrayIterator.hpp>
-#include <ArduinoJson/Variant/VariantData.hpp>
+#include "ArrayFunctions.hpp"
+#include "ArrayIterator.hpp"
+#include "../Variant/VariantData.hpp"
 
 // Returns the size (in bytes) of an array with n elements.
 // Can be very handy to determine the size of a StaticMemoryPool.

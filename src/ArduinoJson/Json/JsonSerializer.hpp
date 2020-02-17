@@ -4,10 +4,10 @@
 
 #pragma once
 
-#include <ArduinoJson/Json/TextFormatter.hpp>
-#include <ArduinoJson/Misc/Visitable.hpp>
-#include <ArduinoJson/Serialization/measure.hpp>
-#include <ArduinoJson/Serialization/serialize.hpp>
+#include "TextFormatter.hpp"
+#include "../Misc/Visitable.hpp"
+#include "../Serialization/measure.hpp"
+#include "../Serialization/serialize.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

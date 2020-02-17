@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <ArduinoJson/Namespace.hpp>
-#include <ArduinoJson/Polyfills/assert.hpp>
+#include "../../Namespace.hpp"
+#include "../assert.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

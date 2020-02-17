@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Namespace.hpp>
+#include "../Namespace.hpp"
 
 #include <stdlib.h>  // for size_t
 
@@ -35,21 +35,21 @@ struct BoundedReader {
 };
 }  // namespace ARDUINOJSON_NAMESPACE
 
-#include <ArduinoJson/Deserialization/Readers/IteratorReader.hpp>
-#include <ArduinoJson/Deserialization/Readers/RamReader.hpp>
+#include "../Deserialization/Readers/IteratorReader.hpp"
+#include "../Deserialization/Readers/RamReader.hpp"
 
 #if ARDUINOJSON_ENABLE_ARDUINO_STREAM
-#include <ArduinoJson/Deserialization/Readers/ArduinoStreamReader.hpp>
+#include "../Deserialization/Readers/ArduinoStreamReader.hpp"
 #endif
 
 #if ARDUINOJSON_ENABLE_ARDUINO_STRING
-#include <ArduinoJson/Deserialization/Readers/ArduinoStringReader.hpp>
+#include "../Deserialization/Readers/ArduinoStringReader.hpp"
 #endif
 
 #if ARDUINOJSON_ENABLE_PROGMEM
-#include <ArduinoJson/Deserialization/Readers/FlashReader.hpp>
+#include "../Deserialization/Readers/FlashReader.hpp"
 #endif
 
 #if ARDUINOJSON_ENABLE_STD_STREAM
-#include <ArduinoJson/Deserialization/Readers/StdStreamReader.hpp>
+#include "../Deserialization/Readers/StdStreamReader.hpp"
 #endif

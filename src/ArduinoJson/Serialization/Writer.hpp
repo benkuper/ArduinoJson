@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Namespace.hpp>
+#include "../Namespace.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 
@@ -28,20 +28,20 @@ class Writer {
 
 }  // namespace ARDUINOJSON_NAMESPACE
 
-#include <ArduinoJson/Serialization/Writers/StaticStringWriter.hpp>
+#include "../Serialization/Writers/StaticStringWriter.hpp"
 
 #if ARDUINOJSON_ENABLE_STD_STRING
-#include <ArduinoJson/Serialization/Writers/StdStringWriter.hpp>
+#include "../Serialization/Writers/StdStringWriter.hpp"
 #endif
 
 #if ARDUINOJSON_ENABLE_ARDUINO_STRING
-#include <ArduinoJson/Serialization/Writers/ArduinoStringWriter.hpp>
+#include "../Serialization/Writers/ArduinoStringWriter.hpp"
 #endif
 
 #if ARDUINOJSON_ENABLE_STD_STREAM
-#include <ArduinoJson/Serialization/Writers/StdStreamWriter.hpp>
+#include "../Serialization/Writers/StdStreamWriter.hpp"
 #endif
 
 #if ARDUINOJSON_ENABLE_ARDUINO_PRINT
-#include <ArduinoJson/Serialization/Writers/PrintWriter.hpp>
+#include "../Serialization/Writers/PrintWriter.hpp"
 #endif
