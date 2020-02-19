@@ -126,6 +126,12 @@ inline VariantRef VariantRef::getElement(size_t index) const {
   return VariantRef(_pool, _data != 0 ? _data->getElement(index) : 0);
 }
 
+inline VariantRef VariantRef::getOrAddElement(size_t index) const {
+  // TODO: extract variantGetOrAddElement() to reduce code size?
+  return VariantRef(_pool,
+                    _data != 0 ? _data->getOrAddElement(index, _pool) : 0);
+}
+
 template <typename TChar>
 inline VariantRef VariantRef::getMember(TChar *key) const {
   return VariantRef(_pool, _data != 0 ? _data->getMember(adaptString(key)) : 0);
