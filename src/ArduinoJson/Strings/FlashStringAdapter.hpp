@@ -4,10 +4,10 @@
 
 #pragma once
 
-#include <ArduinoJson/Memory/MemoryPool.hpp>
-#include <ArduinoJson/Polyfills/pgmspace.hpp>
-#include <ArduinoJson/Strings/IsString.hpp>
-#include <ArduinoJson/Strings/StoragePolicy.hpp>
+#include "../Memory/MemoryPool.hpp"
+#include "../Polyfills/pgmspace.hpp"
+#include "../Strings/IsString.hpp"
+#include "../Strings/StoragePolicy.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <ArduinoJson/Namespace.hpp>
+#include "../Namespace.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 // Wraps a const char* so that the our functions are picked only if the

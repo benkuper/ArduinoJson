@@ -4,12 +4,12 @@
 
 #pragma once
 
-#include <ArduinoJson/MsgPack/endianess.hpp>
-#include <ArduinoJson/Polyfills/assert.hpp>
-#include <ArduinoJson/Polyfills/type_traits.hpp>
-#include <ArduinoJson/Serialization/measure.hpp>
-#include <ArduinoJson/Serialization/serialize.hpp>
-#include <ArduinoJson/Variant/VariantData.hpp>
+#include "../MsgPack/endianess.hpp"
+#include "../Polyfills/assert.hpp"
+#include "../Polyfills/type_traits.hpp"
+#include "../Serialization/measure.hpp"
+#include "../Serialization/serialize.hpp"
+#include "../Variant/VariantData.hpp"
 
 namespace ARDUINOJSON_NAMESPACE {
 

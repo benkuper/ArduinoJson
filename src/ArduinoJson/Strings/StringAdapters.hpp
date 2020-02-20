@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <ArduinoJson/Strings/ConstRamStringAdapter.hpp>
-#include <ArduinoJson/Strings/RamStringAdapter.hpp>
-#include <ArduinoJson/Strings/SizedRamStringAdapter.hpp>
+#include "../Strings/ConstRamStringAdapter.hpp"
+#include "../Strings/RamStringAdapter.hpp"
+#include "../Strings/SizedRamStringAdapter.hpp"
 
 #if ARDUINOJSON_ENABLE_STD_STRING
 #include "../Strings/StlStringAdapter.hpp"
