@@ -301,6 +301,8 @@ class VariantRef : public VariantRefBase<VariantData>,
 
   FORCE_INLINE VariantRef getElement(size_t) const;
 
+  FORCE_INLINE VariantRef getOrAddElement(size_t) const;
+
   // getMember(const char*) const
   // getMember(const __FlashStringHelper*) const
   template <typename TChar>
@@ -324,7 +326,8 @@ class VariantRef : public VariantRefBase<VariantData>,
   FORCE_INLINE VariantRef getOrAddMember(const TString &) const;
 
   FORCE_INLINE void remove(size_t index) const {
-    if (_data) _data->remove(index);
+    if (_data)
+      _data->remove(index);
   }
   // remove(char*) const
   // remove(const char*) const
@@ -332,14 +335,16 @@ class VariantRef : public VariantRefBase<VariantData>,
   template <typename TChar>
   FORCE_INLINE typename enable_if<IsString<TChar *>::value>::type remove(
       TChar *key) const {
-    if (_data) _data->remove(adaptString(key));
+    if (_data)
+      _data->remove(adaptString(key));
   }
   // remove(const std::string&) const
   // remove(const String&) const
   template <typename TString>
   FORCE_INLINE typename enable_if<IsString<TString>::value>::type remove(
       const TString &key) const {
-    if (_data) _data->remove(adaptString(key));
+    if (_data)
+      _data->remove(adaptString(key));
   }
 
  private:
@@ -388,7 +393,7 @@ class VariantConstRef : public VariantRefBase<const VariantData>,
   template <typename TChar>
   FORCE_INLINE VariantConstRef getMember(TChar *key) const {
     const CollectionData *obj = variantAsObject(_data);
-    return VariantConstRef(obj ? obj->get(adaptString(key)) : 0);
+    return VariantConstRef(obj ? obj->getMember(adaptString(key)) : 0);
   }
 
   // operator[](const std::string&) const

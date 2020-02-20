@@ -4,7 +4,9 @@
 
 #pragma once
 
-#include "../Namespace.hpp"
+#include <ArduinoJson/Namespace.hpp>
+#include <ArduinoJson/Strings/IsString.hpp>
+#include <ArduinoJson/Strings/StoragePolicy.hpp>
 
 #include <string.h>  // strcmp
 
@@ -27,9 +29,11 @@ class SizedRamStringAdapter {
   }
 
   char* save(MemoryPool* pool) const {
-    if (!_str) return NULL;
+    if (!_str)
+      return NULL;
     char* dup = pool->allocFrozenString(_size);
-    if (dup) memcpy(dup, _str, _size);
+    if (dup)
+      memcpy(dup, _str, _size);
     return dup;
   }
 
@@ -37,9 +41,7 @@ class SizedRamStringAdapter {
     return _size;
   }
 
-  bool isStatic() const {
-    return false;
-  }
+  typedef storage_policy::store_by_copy storage_policy;
 
  private:
   const char* _str;

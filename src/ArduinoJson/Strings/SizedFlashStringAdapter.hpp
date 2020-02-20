@@ -4,7 +4,9 @@
 
 #pragma once
 
-#include "../Namespace.hpp"
+#include <ArduinoJson/Namespace.hpp>
+#include <ArduinoJson/Strings/IsString.hpp>
+#include <ArduinoJson/Strings/StoragePolicy.hpp>
 
 namespace ARDUINOJSON_NAMESPACE {
 
@@ -14,9 +16,12 @@ class SizedFlashStringAdapter {
       : _str(str), _size(sz) {}
 
   int8_t compare(const char* other) const {
-    if (!other && !_str) return 0;
-    if (!_str) return -1;
-    if (!other) return 1;
+    if (!other && !_str)
+      return 0;
+    if (!_str)
+      return -1;
+    if (!other)
+      return 1;
     return int8_t(
         -strncmp_P(other, reinterpret_cast<const char*>(_str), _size));
   }
@@ -30,9 +35,11 @@ class SizedFlashStringAdapter {
   }
 
   char* save(MemoryPool* pool) const {
-    if (!_str) return NULL;
+    if (!_str)
+      return NULL;
     char* dup = pool->allocFrozenString(_size);
-    if (dup) memcpy_P(dup, reinterpret_cast<const char*>(_str), _size);
+    if (dup)
+      memcpy_P(dup, reinterpret_cast<const char*>(_str), _size);
     return dup;
   }
 
@@ -40,9 +47,7 @@ class SizedFlashStringAdapter {
     return _size;
   }
 
-  bool isStatic() const {
-    return false;
-  }
+  typedef storage_policy::store_by_copy storage_policy;
 
  private:
   const __FlashStringHelper* _str;
